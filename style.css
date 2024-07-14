@@ -141,6 +141,17 @@ main > section{
     box-shadow: 0 4px 30px 0;
     margin-bottom: 20px;
   }
+  #badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+  }
+  #year{
+    font-size: 4rem;
+    font-weight: 400;
+  }
 
   .enjoy-card .enjoy-card-title{
     font-weight: 600;
@@ -148,6 +159,10 @@ main > section{
     margin-top: 0px;
     margin-bottom: 0px;
     
+  }
+
+  .enjoy-architect img{
+    width: 100%;
   }
 
   /* some fact */
@@ -200,12 +215,19 @@ main > section{
     filter: grayscale(100%);
   }
 
+  footer{
+     padding: 8px;
+     margin-top: 30px;
+     text-align: center;
+  }
+
   /* responsive media */
 
   @media screen and (max-width: 576px) {
     .navbar,
     .nav-links,
-    .teams{
+    .teams,
+    .enjoy{
         flex-direction: column;
     }
 
@@ -215,6 +237,10 @@ main > section{
         grid-template-columns: repeat(1, 1fr);
     }
     .features{
+        margin-left: 20px;
+    }
+    #badge{
+        margin-top: 20px;
         margin-left: 20px;
     }
   }
@@ -231,7 +257,7 @@ main > section{
 
   /* medium device */
   @media screen and (min-width:576px) and (max-width:992px){
-    .teams{
+    .teams, .enjoy{
         flex-direction: column;
     }
     .features{
@@ -243,5 +269,9 @@ main > section{
     }
     .facts-container{
         grid-template-columns: repeat(2, 1fr);
+    }
+    #badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
   }
